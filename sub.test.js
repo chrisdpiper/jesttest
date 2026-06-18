@@ -20,7 +20,7 @@ describe('sub function', () => {
   });
   describe('edge tests', () => {
     test('string input', () => {
-      expect(sub('a','m')).toBeNan();
+      expect(sub('a','m')).toBeNaN();
     });
         test('undefined input', () => {
       expect(sub(undefined, 2)).toBeNaN();
