@@ -14,8 +14,11 @@ describe('sub function', () => {
     test('subtract below zero', () => {
       expect(sub(9,18)).toBe(-9);
     });
-    test('subtract nergative numbers', () => {
-      expect(sub(-9,-9)).toBe(-18);
+    test('subtract two negative numbers', () => {
+      expect(sub(-9,-10)).toBe(1);
+    });
+    test('subtract a negative number', () => {
+      expect(sub(100,-10)).toBe(110);
     });
   });
   describe('edge tests', () => {
