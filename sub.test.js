@@ -1,7 +1,7 @@
 const sub = require('./sub');
 
 describe('sub function', () => {
-  describe('basic subtraction')
+  describe('basic subtraction', () => {
     test('adds 1 + 2 to equal 3', () => {
       expect(sub(3, 2)).toBe(1);
     });
@@ -25,5 +25,5 @@ describe('sub function', () => {
         test('undefined input', () => {
       expect(sub(undefined, 2)).toBeNaN();
     });
- 
+    });
 });
